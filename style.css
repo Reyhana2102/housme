@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Merienda:wght@300..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(-100px); /* Soldan başlar */
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0); /* Orijinal pozisyonuna gelir */
+    }
+}
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(100px); /* Sağdan başlar */
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0); /* Orijinal pozisyonuna gelir */
+    }
+}
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(100px); 
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px); 
+        }
+}
+@keyframes slideUpIn {
+    from {
+        opacity: 0;
+        transform: translateY(-60px); 
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); 
+        }
+}
+*{ 
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+*::selection{
+    color: rgb(175, 139, 48);
+    background-color: transparent;
+}
+
+li{
+    list-style: none;
+}
+header{
+    border-bottom: 2px solid rgb(128, 101, 28);
+    border-radius: 25px;
+    height: 120px;
+    padding: 30px 20px 0px 20px;
+    width: 100%;   
+    /* margin: 0 -80px;  */
+}
+.head{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+header .home a{
+    font-family: "Merienda", cursive;
+    text-decoration: none;
+    font-size: 34px;
+    font-weight: bold;
+    color: rgb(122, 80, 32);
+    margin-right: 40px;
+}
+header .home a:hover{
+    color: rgb(173, 129, 48);
+}
+.input-group a{
+    color: white;
+}
+.dropdown-menu{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    text-wrap: pretty;
+    height: 250px;
+    width: 170px;
+    margin-top: 10px;
+    border-radius: 15px;
+    /* padding: 0; */
+}
+.dropdown{
+    border-radius: 15px;
+}
+.dropdown:hover{
+    background-color: rgb(153, 131, 32);
+    color: white;
+}
+.dropdown-item{
+    margin-top: 5px;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icons li{
+    list-style: none;
+    margin-left: 30px;
+    margin-top: 15px;
+    border-radius: 40px;
+    width: 20px;
+}
+.icons li svg{
+    width: 20px;
+    height: 20px;
+}
+.icons li:hover{
+    background-color: rgb(224, 215, 200);
+}
+.sec1 h2{
+    color: rgb(78, 61, 19);
+    font-size: 42px;
+    margin: 40px 30px 30px 50px;
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    /* animation: slideUpIn 1s ease-out forwards; */
+}
+.sec1 h2:hover{
+    color: rgb(145, 111, 26);
+}
+.lists{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/logo.png);
+    background-size: 30%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    flex-wrap: wrap;
+}
+.list-boxes{
+    animation: slideInUp 1s ease-out forwards;
+    box-sizing: border-box;
+    border: 1px solid #ab7e09;
+    border-radius: 20px;
+    margin-top: 40px;
+    /* margin-left: 20px; */
+    width: 500px;
+    height: 300px;
+}
+.lists .list-boxes:nth-child(2){
+    margin-left: 50px;
+}
+.lists .list-boxes:nth-child(4){
+    margin-left: 50px;
+}
+.list-boxes ul{
+    margin-top: 55px;
+    margin-left: 20px;
+}
+.lists li{
+    margin-top: 10px;
+    font-family:   'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* font-style: oblique; */
+}
+.lists li a{
+    text-decoration: none;
+    color: rgb(116, 88, 29);
+    font-size: 22px;
+}
+.lists li a:hover{
+    color: rgb(128, 97, 20);
+    opacity: 0.8;
+}
+.elements{
+    display: flex;
+    margin-top: 15px;
+}
+.sec1 img{
+    margin-right: 30px;
+    margin-bottom: 5px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;    
+}
+.sec2{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    position: relative;
+    height: 575px;
+}
+.sec2 h2{
+    color: rgb(78, 61, 19);
+    font-size: 42px;
+    margin: 70px 50px 20px 50px;
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    /* opacity: 0; 
+    animation: slideInUp 1s ease-out forwards; */
+        
+}
+.sec2 h2:hover{
+    color: rgb(145, 111, 26);
+}
+.sec2 img{
+    position: absolute;
+    width: 300px;
+    height: 500px;
+    margin-left: 850px;
+    animation: slideInLeft 1s ease-out forwards;
+}
+.text{
+    margin: 60px;
+    width: 580px;
+    /* height: 300px; */
+}
+.sec2 p{
+    font-size: 18px;
+    font-family: "Lora";
+    animation: slideInRight 1s ease-out forwards;
+    line-height: 1.8;
+    color: rgb(41, 19, 3);
+}
+.sec3{
+    margin: 50px 0;
+}
+footer{
+    border-top: 1px solid rgb(128, 97, 20);
+    border-radius: 15px;
+    margin-top: 50px;
+    padding: 50px;
+    height: 300px;
+    color: #7a5905;
+}
+ul{
+    list-style: none;
+}
+#showInfoButton{
+    border-radius: 20px;
+    height: 40px;
+    width: 150px;
+    background: transparent;
+}
+#showInfoButton:hover{
+    background: rgb(116, 88, 29);
+    color: wheat;
+}
+.info{
+    display: none; /* Başlangıçta gizli */ 
+    margin-top: 20px; 
+    padding: 10px; 
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+    background-color: transparent; 
+    border: 1px solid rgb(122, 80, 32);
+    border-radius: 10px;
+}
+.info h2{
+    margin-left: 30px;
+    font-size: 24px;
+}
+.info li{
+    margin-top: 10px;
+}
+.info li a{
+    color: rgb(119, 92, 32);
+    text-decoration: none;
+}
+.info li a:hover{
+    color: rgb(187, 143, 48);
+}
+.sec3 h2{
+    color: rgb(78, 61, 19);
+    font-size: 42px;
+    margin: 70px 50px 20px 50px;
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    /* opacity: 0; 
+    animation: slideInUp 1s ease-out forwards; */
+        
+}
+.sec3 h2:hover{
+    color: rgb(145, 111, 26);
+}
+.sec3 .photo-container{
+    margin: 50px;
+    display: flex;
+    overflow: hidden;
+    position: relative;   
+}
+.photo-slide{
+    display: flex;
+    animation: slide 25s infinite linear;
+
+}
+.photo-container img {
+    width: 200px;
+    height: 100px;
+    margin-left: 10px;
+}
+

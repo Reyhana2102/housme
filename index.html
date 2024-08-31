@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+    </style>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body style="background-color: rgb(231, 228, 219)">
+    <div class="abc">
+      <header>
+        <div class="head">
+          <div class="home"><a href="">HOuseMe</a></div>
+          <div class="dropdown" style="margin-right: 40px">
+            <button
+              class="btn dropdown-toggle"
+              style="border: transparent; margin: 0px 10px"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Categories
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="#">Furniture</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Home Décor</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Kitchenware</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Home Textile</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Bathroom Products</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Lighting Productss</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Storage Solutions</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Garden and Balcony Items</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Cleaning Supplies</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Smart Home Devices</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Tableware</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Kids' Room Décor</a>
+              </li>
+            </ul>
+          </div>
+          <div class="input-group" style="width: 650px">
+            <input
+              style="
+                border-radius: 20px;
+                background-color: transparent;
+                border: 1px solid rgb(165, 122, 42);
+              "
+              type="text"
+              class="form-control"
+              aria-label="Sizing example input"
+              aria-describedby="inputGroup-sizing-default"
+              placeholder="Search what you want"
+            />
+            <button
+              style="
+                background-color: rgb(163, 102, 52);
+                color: wheat;
+                border-radius: 20px;
+                border: transparent;
+                margin-left: 5px;
+              "
+              class="input-group-text"
+              id="inputGroup-sizing-default"
+            >
+              <a href="#"> <i class="fa-solid fa-magnifying-glass"></i></a>
+            </button>
+          </div>
+          <div>
+            <ul class="icons">
+              <li data-favorites-nav-container="">
+                <a href="#">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M20.877 12.52c.054-.076.103-.157.147-.239A6 6 0 0 0 12 4.528a6 6 0 0 0-9.024 7.753c.044.082.093.162.147.24l.673.961a6 6 0 0 0 .789.915L12 21.422l7.415-7.025c.293-.278.557-.584.789-.915l.673-.961Zm-14.916.425L12 18.667l6.04-5.722c.195-.185.371-.39.525-.61l.673-.961a.335.335 0 0 0 .044-.087 4 4 0 1 0-7.268-2.619v.003L12 8.667l-.013.004v-.002a3.975 3.975 0 0 0-1.237-2.574 4 4 0 0 0-6.031 5.193c.009.03.023.058.043.086l.673.961a4 4 0 0 0 .526.61Z"
+                    ></path>
+                  </svg>
+                </a>
+              </li>
+              <li data-gift-mode-nav-container="">
+                <a
+                  href="#"
+                  class="wt-tooltip__trigger wt-tooltip__trigger--icon-only wt-btn wt-btn--transparent wt-btn--icon reduced-margin-xs header-button"
+                  data-gift-mode-nav-link=""
+                  aria-labelledby="ge-tooltip-label-gift-mode"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M5.535 7A4 4 0 0 1 12 2.354 4 4 0 0 1 18.465 7H22v9h-1v6H3v-6H2V7h3.535Zm9.466 0H13V5a2 2 0 1 1 2.001 2ZM11 5a2 2 0 1 0-2.001 2H11V5Zm-.764 4c-.55.614-1.348 1-2.236 1v2a4.978 4.978 0 0 0 3-1v3H4V9h6.236ZM13 11c.836.628 1.874 1 3 1v-2a2.992 2.992 0 0 1-2.236-1H20v5h-7v-3Zm-8 5v4h6v-4H5Zm8 4v-4h6v4h-6Z"
+                    ></path>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  data-header-cart-nav-anchor=""
+                  aria-label="Cart"
+                  href="#"
+                  class="wt-tooltip__trigger wt-tooltip__trigger--icon-only wt-btn wt-btn--transparent wt-btn--icon header-button"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="m5.766 5-.618-3H1v2h2.518l2.17 10.535L6.18 17h14.306l2.4-12H5.767ZM7.82 15l-1.6-8h14.227l-1.6 8H7.82Z"
+                    ></path>
+                    <path
+                      d="M10.666 20.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm8.334 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"
+                    ></path>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="sec1">
+          <h2>Categories</h2>
+          <div class="lists">
+            <div class="list-boxes">
+              <ul>
+                <div class="elements">
+                  <img
+                    src="images/0013_CANE_LINE_INDOOR_2022_077_12013.webp"
+                    alt=""
+                  />
+                  <li>
+                    <a href="#">Furniture</a>
+                  </li>
+                </div>
+                <div class="elements">
+                  <img src="images/art.jpg" alt="" />
+                  <li>
+                    <a href="#">Home Décor</a>
+                  </li>
+                </div>
+                <div class="elements">
+                  <img src="images/Cookware-sets.jpg" alt="" />
+                  <li>
+                    <a href="#">Kitchenware</a>
+                  </li>
+                </div>
+              </ul>
+            </div>
+            <div class="list-boxes">
+              <ul>
+                <div class="elements">
+                  <img src="images/Bedspreads.webp" alt="" />
+                  <li>
+                    <a href="#">Home Textile</a>
+                  </li>
+                </div>
+                <div class="elements">
+                  <img src="images/Shower curtains.webp" alt="" />
+                  <li>
+                    <a href="#">Bathroom Products</a>
+                  </li>
+                </div>
+                <div class="elements">
+                  <img src="images/Chandeliers.jpg" alt="" />
+                  <li>
+                    <a href="#">Lighting Products</a>
+                  </li>
+                </div>
+              </ul>
+            </div>
+            <div class="list-boxes">
+              <ul>
+                <div class="elements">
+                  <img src="images/Shelves.webp" alt="" />
+                  <li>
+                    <a class="dropdown-item" href="#">Storage Solutions</a>
+                  </li>
+                </div>
+                <div class="elements">
+                  <img src="images/Outdoor furniture.jpg" alt="" />
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Garden and Balcony Items</a
+                    >
+                  </li>
+                </div>
+                <div class="elements">
+                  <img src="images/vacuum cleaners.webp" alt="" />
+                  <li>
+                    <a class="dropdown-item" href="#">Cleaning Supplies</a>
+                  </li>
+                </div>
+              </ul>
+            </div>
+            <div class="list-boxes">
+              <ul>
+                <div class="elements">
+                  <img src="images/Smart speakers.jpg" alt="" />
+                  <li>
+                    <a class="dropdown-item" href="#">Smart Home Devices</a>
+                  </li>
+                </div>
+                <div class="elements">
+                  <img src="images/napkins.jpg" alt="" />
+                  <li>
+                    <a class="dropdown-item" href="#">Tableware</a>
+                  </li>
+                </div>
+                <div class="elements">
+                  <img src="images/themed bedding.webp" alt="" />
+                  <li>
+                    <a class="dropdown-item" href="#">Kids' Room Décor</a>
+                  </li>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="sec2">
+          <h2>What do we suggest you?</h2>
+          <img
+            src="images/Grey Modern Furniture (Instagram Story).png"
+            alt=""
+          />
+          <div class="text">
+            <p>
+              Discover our handpicked selection of home essentials, meticulously
+              chosen to elevate your living space. We suggest starting with our
+              personalized product recommendations, tailored specifically to
+              match your unique style and preferences. Benefit from our
+              exclusive first-time shopper discounts, and join our loyalty
+              program to enjoy special rewards and perks for repeat purchases.
+              Take advantage of our free shipping on orders over a certain
+              amount, and keep an eye out for seasonal promotions and
+              limited-time sales for the best value. For a more personalized
+              experience, schedule a complimentary home decor consultation with
+              our experts, who can offer tailored advice and help you make the
+              best choices for your home. Our goal is to provide you with
+              everything you need to create a stylish, comfortable, and
+              functional living environment
+            </p>
+          </div>
+        </section>
+        <section class="sec3">
+          <h2>Our Partners</h2>
+          <div class="photo-container">
+            <div class="photo-slide">
+              <img src="/images/Ikea.png" alt="Photo 1" />
+              <img src="/images/lowes.png" alt="Photo 2" />
+              <img src="/images/cb2.png" alt="Photo 3" />
+              <img src="/images/westelm.png" alt="Photo 4" />
+              <img src="/images/wayfair.png" alt="Photo 4" />
+              <img src="/images/jysk.png" alt="" />
+              <img src="/images/EMBAWOOD.jpg" alt="" />
+              <img src="/images/bed-bath.jpg" alt="" />
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="row">
+          <div class="col-6 col-md-2 mb-3">
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary"
+                  >Features</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary"
+                  >About us</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-4 mb-3">
+            <button id="showInfoButton">Show Contact info</button>
+            <div class="info" id="info">
+              <h2>Here is our contact info</h2>
+              <ul>
+                <li><a href="#">Phone call</a></li>
+                <li><a href="#">houseme@hotmail.ru</a></li>
+                <li><a href="#">Location</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-5 offset-md-1 mb-3">
+            <form>
+              <h5>Subscribe to our newsletter</h5>
+              <p>Monthly digest of what's new and exciting from us.</p>
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden"
+                  >Email address</label
+                >
+                <input
+                  style="
+                    background-color: transparent;
+                    border: 1px solid rgb(165, 122, 42);
+                  "
+                  id="newsletter1"
+                  type="text"
+                  class="form-control"
+                  placeholder="Email address"
+                />
+                <button
+                  class="btn"
+                  style="background-color: rgb(165, 122, 42); color: white"
+                  type="button"
+                >
+                  Subscribe
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div
+          class="d-flex flex-column flex-sm-row justify-content-between py-4 my-5 border-top"
+        >
+          <p>&copy; 2024 Company, Inc. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
